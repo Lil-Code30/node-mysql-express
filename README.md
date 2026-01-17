@@ -50,3 +50,14 @@ INSERT INTO users(name, email) VALUES
 ('Ivy Yellow', 'ivy.yellow@example.com');
 
 ```
+
+.env file
+
+```bash
+DB_HOST=127.0.0.1
+DB_USER=root
+DB_PASSWORD="DBeaver root password"
+DB_DATABASE="your database"
+DB_PORT=3306
+PORT=8001
+```

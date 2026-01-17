@@ -1,5 +1,6 @@
 const express = require("express");
 const mysql = require("mysql2/promise");
+require("dotenv").config();
 
 const app = express();
 const PORT = 8001;
@@ -7,11 +8,11 @@ const PORT = 8001;
 async function startServer() {
   try {
     const connection = await mysql.createConnection({
-      host: "127.0.0.1",
-      user: "root",
-      password: "azerty237",
-      database: "githut",
-      port: 3306,
+      host: process.env.DB_HOST,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_DATABASE,
+      port: process.env.DB_PORT,
     });
 
     app.use(express.json());
