@@ -9,10 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Routes
-app.get("/members", async (req, res) => {
-  const [members] = await connection.query("SELECT * FROM users");
-  res.send({ members });
-});
+app.use("/members", require("./routes/members.routes"));
 
 app.get("/", (req, res) => {
   res.json({ message: "ok" });
