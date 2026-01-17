@@ -61,3 +61,31 @@ DB_DATABASE="your database"
 DB_PORT=3306
 PORT=8001
 ```
+
+## 🎯 Test with Postman / Thunder Client / Insomnia
+
+### GET
+
+`GET http://localhost:8001/members`
+
+### POST
+
+`POST http://localhost:8001/members`
+
+body JSON :
+
+```json
+{ "name": "Ismael", "email": "test@example.com" }
+```
+
+### PUT
+
+`PUT http://localhost:8001/members/1`
+
+```json
+{ "name": "NouveauNom", "email": "new@mail.com" }
+```
+
+### DELETE
+
+`DELETE http://localhost:8001/members/1`
