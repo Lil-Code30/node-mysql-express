@@ -4,6 +4,8 @@ Building a MySQL Database Connection with Node.js and Express
 
 ## Setting up table and data
 
+[DBeaver Community](https://dbeaver.io/download/) is a free, open-source database management tool recommended for personal projects.
+
 ### Parameters Connection for MySQL
 
 Create a new connection
